@@ -2,6 +2,11 @@
 
 A 150-line Python Geometric TSP heuristic.
 
+“It finds the two farthest-apart points in your dataset (the diameter), </br>
+turns that line into a ruler, divides it into exactly N equal logical segments (one per point), <br/>
+then sweeps along the ruler grabbing every point that falls within a 1.3× tolerance band <br/>
+— always the closest one first. Pure geometry. No ML. No black boxes.”
+
 No training.  
 No parameters.  
 Just geometry.
