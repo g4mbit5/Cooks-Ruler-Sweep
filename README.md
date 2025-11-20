@@ -64,26 +64,23 @@ It doesn't beat LKH-3 on quality — **yet** — but it **crushes** everything e
 
 ### Cook's Ruler Sweep — Euclidean Monster (Flat-Space Edition)
 
-| Dataset                        | Cities | Nearest Neighbor | Euclidean Monster | Improvement vs NN | Runtime |
-|--------------------------------|--------|------------------|-------------------|-------------------|---------|
-| 100 US Cities                  | 100    | ~447 miles       | **351 miles**     | **+21.5%**        | 0.3 s   |
-| 1,000 Nationwide US Cities     | 1,000  | ~2,135 miles     | **2,027 miles**   | **+5.1%**         | 12.3 s  |
-| 1,000 Clustered Points         | 1,000  | ~179 miles       | **171 miles**     | **+4.5%**         | 11.5 s  |
+| Dataset                        | Nearest Neighbor | Euclidean Monster | Improvement vs NN | Runtime |
+|--------------------------------|------------------|-------------------|-------------------|---------|
+| 100 Perfect Warehouse Data     | 2,925.1          | 2,845.4           | +2.8%             | 1.17s   | 
 
 > Pure Euclidean distance — no Earth curvature  
 > GA + 3-opt local search on top of Cook's Ruler seed  
-> **+21.5% on 100 cities in 0.3 seconds** — no known pure-Python heuristic comes close
 
-### Cooks Ruler Sweep Euclidean Monster vs other Market Flat Space solvers  (2025–2030)
+### Cooks Ruler Sweep Euclidean Monster vs other Flat Space solvers  (2025–2030)
 
-| Market                        | 2025 Size | CAGR | Current Tools                     | Their Typical Improvement | Cooks Ruler Euclidean Improvement  |
-|-------------------------------|-----------|------|-----------------------------------|---------------------------|------------------------------------|
-| **PCB Drill Path Optimization** | $8B      | 12%  | Altium, Cadence, TabuSearch/GA   | +8–15% vs greedy          | **+21.5%** in 0.3s                 |
-| **Warehouse Robotics** (Amazon Robotics, Locus, Geek+) | $8B      | 19.6%| A*/RRT* hybrids                   | +12–18%                   | **+21.5%** on structured maps     |
-| **Particle Physics Track Reconstruction** (CERN, Fermilab) | $2B      | 12%  | Hough Transform, Kalman filters   | +15–25%                   | **+21.5%** in flat detector space |
-| **DNA Read Overlap Graph Layout** (Illumina, PacBio) | $25B     | 15%  | Minimap2, StringGraph            | +10–20%                   | **+21.5%** on 1D overlap            |
-| **3D Printing Toolpath Optimization** | $5B      | 25%  | Slicers (Prusa, Cura)             | +5–10%                    | **+21.5%** on layer paths          |
-| **Defense Drone Swarms** (DoD, Anduril) | $12B     | 14%  | GA + Dubins paths                 | +10–15%                   | **+21.5%** in 3D airspace          |
+| Solver                        | Improvement over Nearest Neighbor on Warehouse Data |
+|-------------------------------|-------------------------------------------------------|
+| LKH-3                         | +5–12%                                                |
+| OR-Tools (Guided Local Search)| +3–8%                                                 |
+| PyVRP                         | +4–9%                                                 |
+| **Cooks Ruler Euclidean**     | **+2.8%**                                             |
+
+**150 lines of Pure Python** No C++. No external solvers.  
 
 ### How to test your own data
 
