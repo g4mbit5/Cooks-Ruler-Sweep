@@ -1,15 +1,23 @@
-# Commercial License for Cook's Ruler
+# Commercial License for Cook's Ruler Sweep (2025)
 
-Cook's Ruler is licensed under the Business Source License 1.1.
+Cook's Ruler Sweep is licensed under the Business Source License 1.1 (BSL 1.1). <br/>
+Full BSL 1.1 text: [MariaDB BSL 1.1](https://mariadb.com/bsl11)
 
-- Free for non-production use (research, education, personal projects, evaluation)
-- Commercial / production use requires a paid license
+- **Free** for non-production use (research, education, personal projects, evaluation).  
+- **Commercial / production use requires a paid license**.  
 
-To discuss commercial licensing (including pricing, support, and distribution),  
-please contact me directly:
+## Pricing Tiers
 
+| Edition                     | Price (one-time) | Includes                                   |
+|-----------------------------|------------------|--------------------------------------------|
+| Desktop binary              | **$1,999**       | Windows/Mac/Linux, unlimited nodes         |
+| Self-hosted server          | **$29,999**      | Encrypted binary, API, unlimited nodes     |
+| Enterprise (custom tuning)  | **$100,000+**    | Custom tuning call + source escrow option  |
+
+To discuss commercial licensing (pricing, support, distribution), contact:  
 Email: contact@orionis-labs.com  
-LinkedIn: linkedin.com/company/orionislabs/
-LinkedIn: linkedin.com/in/scott-cook-8a9585167
+LinkedIn: [Orionis Labs](https://linkedin.com/company/orionislabs)
 
-Thanks!
+No subscriptions. No cloud. You own it forever.
+
+---
