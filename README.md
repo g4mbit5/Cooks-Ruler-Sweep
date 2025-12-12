@@ -45,7 +45,8 @@
 
 ---
 
-contact for any questions: contact@orionis-labs.com
+contact for any questions: contact@orionis-labs.com <br/>
+Website: [orionis-labs.com](https://orionis-labs.com)
 
 ---
 
